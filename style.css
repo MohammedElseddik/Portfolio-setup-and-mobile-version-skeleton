@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Signika+Negative:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* fix this one */
+html {
+  width: 375px;
+  height: 48px;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-ser;
+}
+
+.nav-bar {
+  margin-top: 44px;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  color: #6070ff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.menu {
+  width: 18px;
+  height: 12px;
+}
