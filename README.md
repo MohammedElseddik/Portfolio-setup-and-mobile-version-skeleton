@@ -12,9 +12,9 @@
 
 👤 **Mohammed Elseddik Rebbouh**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/MohammedElseddik)
+- Twitter: [@twitterhandle](https://twitter.com/RebbouhElseddik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammed-elseddik-rebbouh-676500192)
 
 ## 🤝 Contributing
 
@@ -35,4 +35,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](/MIT.md) licensed.

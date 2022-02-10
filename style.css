@@ -84,10 +84,19 @@ html {
   line-height: 24px;
 }
 
-.contact-me div {
+.contact-me a {
+  text-decoration: none;
+}
+
+.contact-me ul {
   display: flex;
   justify-content: space-between;
+  padding: 0;
   width: 170.17px;
   height: 20px;
   margin: 0 0 136px 24px;
+}
+
+.contact-me li {
+  list-style: none;
 }
