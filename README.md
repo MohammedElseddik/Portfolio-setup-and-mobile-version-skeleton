@@ -1,4 +1,3 @@
-# Portfolio-setup-and-mobile-version-skeleton
  Description of the project: 
     This project represents the mobile version of my portfolio where all my projects and skills will be uploaded on it in the future.
 
