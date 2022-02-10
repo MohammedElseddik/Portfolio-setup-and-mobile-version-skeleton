@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Signika+Negative:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,30 +6,84 @@
 
 /* fix this one */
 html {
-  width: 375px;
-  height: 48px;
+  padding: 0;
+  margin: 0;
   font-size: 62.5%;
-  font-family: "Open Sans", sans-ser;
+  font-family: "Poppins", sans-ser;
 }
 
+
 .nav-bar {
-  margin-top: 44px;
-  padding: 8px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin-top: 44px;
+  padding: 14px 24px;
 }
 
 .logo {
+  width: 76px;
+  height: 20px;
   color: #6070ff;
   text-decoration: none;
   font-size: 1.8rem;
+  line-height: 20px;
   font-style: normal;
   font-weight: bold;
 }
 
 .menu {
-  width: 18px;
+  width: 16px;
   height: 12px;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container h1 {
+  color: #172b4d;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: normal;
+  width: 327px;
+  line-height: 52px;
+  padding: 0;
+  margin: 128px 24px 0 24px;
+}
+
+.container p {
+  width: 327px;
+  height: 146px;
+  line-height: 24px;
+  color: #344563;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 12px 24px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me P {
+  color: #7f8cff;
+  font-size: 1.6rem;
+  height: 24px;
+  margin: 0 0 12px 24px;
+  line-height: 24px;
+}
+
+.contact-me div {
+  display: flex;
+  justify-content: space-between;
+  width: 170.17px;
+  height: 20px;
+  margin: 0 0 136px 24px;
 }
