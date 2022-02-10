@@ -8,7 +8,7 @@ html {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  font-family: Poppins, sans-ser;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-bar {
@@ -76,7 +76,7 @@ html {
   flex-direction: column;
 }
 
-.contact-me p{
+.contact-me p {
   color: #7f8cff;
   font-size: 1.6rem;
   height: 24px;
