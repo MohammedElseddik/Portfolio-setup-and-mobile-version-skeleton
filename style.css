@@ -8,7 +8,7 @@ html {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  font-family: "Poppins", sans-ser;
+  font-family: Poppins, sans-ser;
 }
 
 .nav-bar {
@@ -40,7 +40,6 @@ html {
   width: 375px;
   height: 700px;
   background-image: url(/img/header-shapes\ mobile.png);
-  background-size: contain;
   background-repeat: no-repeat;
   background-size: 375px 700px;
 }
@@ -77,7 +76,7 @@ html {
   flex-direction: column;
 }
 
-.contact-me P {
+.contact-me p{
   color: #7f8cff;
   font-size: 1.6rem;
   height: 24px;
