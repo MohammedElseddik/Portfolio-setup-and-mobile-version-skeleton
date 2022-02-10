@@ -12,7 +12,6 @@ html {
   font-family: "Poppins", sans-ser;
 }
 
-
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -38,7 +37,14 @@ html {
   height: 12px;
 }
 
-
+.headline {
+  width: 375px;
+  height: 700px;
+  background-image: url(/img/header-shapes\ mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 375px 700px;
+}
 
 .container {
   display: flex;
