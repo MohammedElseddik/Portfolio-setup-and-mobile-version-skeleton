@@ -303,17 +303,17 @@ html {
   background-color: #fff;
 }
 
-.categories {
+.categories-list {
   background-color: #fff;
   padding: 0;
   margin: 0;
 }
 
-.categories li {
+.categories-list li {
   list-style: none;
 }
 
-.categories .langguages {
+.categories-list .langguages {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -321,7 +321,7 @@ html {
   margin: 0;
 }
 
-.categories .langguages div {
+.categories-list .langguages div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -331,25 +331,25 @@ html {
   margin: 0 24px 12px 24px;
 }
 
-.categories .arrow1 {
+.categories-list .arrow1 {
   width: 12px;
   height: 6px;
   margin: 40px;
 }
 
-.categories .arrow2 {
+.categories-list .arrow2 {
   width: 6px;
   height: 12px;
   margin: 42px;
 }
 
-.categories .langguages p {
+.categories-list .langguages p {
   font-size: 1.5rem;
   font-weight: 500;
   color: #253858;
 }
 
-.categories .langguages li {
+.categories-list .langguages li {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -358,16 +358,16 @@ html {
   border-radius: 8px;
 }
 
-.categories .langguages li p {
+.categories-list .langguages li p {
   width: 215px;
   height: 24px;
 }
 
-.categories .langguages li img {
+.categories-list .langguages li img {
   padding: 9px 0 9.72px 12px;
 }
 
-.categories h2 {
+.categories-list h2 {
   padding: 24px;
   margin: 0;
   font-size: 2rem;
@@ -375,7 +375,7 @@ html {
   line-height: 24px;
 }
 
-.categories .frameworks {
+.categories-list .frameworks {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -383,7 +383,7 @@ html {
   margin: 0;
 }
 
-.categories .frameworks div {
+.categories-list .frameworks div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -394,7 +394,7 @@ html {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.categories .skills {
+.categories-list .skills {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -402,7 +402,7 @@ html {
   margin-bottom: 113.85px;
 }
 
-.categories .skills div {
+.categories-list .skills div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
