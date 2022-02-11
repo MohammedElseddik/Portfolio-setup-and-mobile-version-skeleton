@@ -100,3 +100,117 @@ html {
 .contact-me li {
   list-style: none;
 }
+
+/* work-section */
+
+.work-section {
+  display: grid;
+  grid-template-rows: repeat(4, 100%);
+  grid-template-columns: 100%;
+  justify-items: center;
+  padding-bottom: 114px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.work-section .card1 {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  margin: 114px 24px 0 24px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.work-section .card-work {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  margin: 88px 24px 0 24px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.work-section .card-work img {
+  width: 295px;
+  margin: 16px 16px 12px 16px;
+}
+
+.work-section .card-work h1 {
+  color: #172b4d;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 44px;
+  margin: 0 16px 0 16px;
+}
+
+.frame2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 16px 12px 16px;
+  padding: 8px 0;
+}
+
+.frame2 p {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #344563;
+  line-height: 16px;
+}
+
+.frame2 ul {
+  display: flex;
+  padding: 0;
+}
+
+.frame2 li {
+  margin: 0 12px 0 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.work-section .card-work > p {
+  font-size: 1.5rem;
+  line-height: 24px;
+  margin: 0px 16px 12px 16px;
+  color: #344563;
+}
+
+.work-section .programing-lamguages {
+  display: flex;
+  margin-left: 16px;
+  padding: 0;
+}
+
+.work-section .programing-lamguages li {
+  padding: 8px 12px;
+  margin: 0 8px 24px 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #6070ff;
+  line-height: 16px;
+  border-radius: 8px;
+  background-color: #ebebff;
+}
+
+.work-section .card-work button {
+  width: 124px;
+  height: 48px;
+  padding: 12px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0 0 28px 16px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
