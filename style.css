@@ -189,6 +189,10 @@ html {
   padding: 0;
 }
 
+.categories-list li {
+  list-style: none;
+}
+
 .work-section .programing-lamguages li {
   padding: 8px 12px;
   margin: 0 8px 24px 0;
@@ -291,10 +295,6 @@ html {
   margin: 0 0 22px 24px;
   width: 170.17px;
   height: 20px;
-}
-
-.categories-list li {
-  list-style: none;
 }
 
 .about-section .contact li {
