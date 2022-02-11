@@ -201,6 +201,21 @@ html {
   background-color: #ebebff;
 }
 
+.about-section button {
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0 0 48px 16px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
 .work-section .card-work button {
   width: 124px;
   height: 48px;
@@ -278,23 +293,12 @@ html {
   height: 20px;
 }
 
-.about-section .contact li {
+.categories-list li {
   list-style: none;
 }
 
-.about-section button {
-  width: 162px;
-  height: 48px;
-  padding: 12px;
-  font-size: 1.7rem;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 1px;
-  margin: 0 0 48px 16px;
-  color: #396df2;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background-color: #fff;
+.about-section .contact li {
+  list-style: none;
 }
 
 /* skill-list */
@@ -307,10 +311,6 @@ html {
   background-color: #fff;
   padding: 0;
   margin: 0;
-}
-
-.categories-list li {
-  list-style: none;
 }
 
 .categories-list .langguages {
