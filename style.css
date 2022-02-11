@@ -313,15 +313,7 @@ html {
   margin: 0;
 }
 
-.categories-list .langguages {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.categories-list .langguages div {
+.categories-list > li div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -331,6 +323,14 @@ html {
   margin: 0 24px 12px 24px;
 }
 
+.categories-list .langguages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+ 
 .categories-list .arrow1 {
   width: 12px;
   height: 6px;
@@ -383,32 +383,10 @@ html {
   margin: 0;
 }
 
-.categories-list .frameworks div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 327px;
-  height: 72px;
-  margin: 0 24px 12px 24px;
-  border-bottom: 1px solid #dfe1e6;
-}
-
 .categories-list .skills {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0;
   margin-bottom: 113.85px;
-}
-
-.categories-list .skills div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 327px;
-  height: 72px;
-  margin: 0 24px 12px 24px;
-  border-bottom: 1px solid #dfe1e6;
 }
