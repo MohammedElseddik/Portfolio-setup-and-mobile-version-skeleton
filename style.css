@@ -376,15 +376,15 @@ html {
 .categories-list .frameworks {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .categories-list .skills {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 0;
   margin-bottom: 113.85px;
+  border-bottom: 1px solid #dfe1e6;
 }
