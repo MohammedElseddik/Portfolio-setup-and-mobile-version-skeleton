@@ -169,7 +169,8 @@ html {
 }
 
 .frame2 li {
-  margin: 0 12px 0 12px;
+  margin: 0 15px 0 15px;
+  list-style-image: url(/img/Counter.svg);
   font-size: 1.3rem;
   font-weight: 600;
   color: #7a869a;
@@ -398,7 +399,7 @@ html {
   flex-direction: column;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 113.85px;
 }
 
 .categories .skills div {
