@@ -295,3 +295,119 @@ html {
   border-radius: 8px;
   background-color: #ffffff;
 }
+
+/* skill-list */
+
+.skill-list {
+  background-color: #ffffff;
+}
+
+.categories {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  list-style: none;
+}
+
+.categories .langguages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.categories .langguages div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+  height: 72px;
+  margin: 0 24px 12px 24px;
+}
+
+.categories .arrow1 {
+  width: 12px;
+  height: 6px;
+  margin: 40px;
+}
+
+.categories .arrow2 {
+  width: 6px;
+  height: 12px;
+  margin: 42px;
+}
+
+.categories .langguages p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #253858;
+}
+
+.categories .langguages li {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 36px 12px 36px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+}
+
+.categories .langguages li p {
+  width: 215px;
+  height: 24px;
+}
+
+.categories .langguages li img {
+  padding: 9px 0 9.72px 12px;
+}
+
+.categories h2 {
+  padding: 24px;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.categories .frameworks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.categories .frameworks div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+  height: 72px;
+  margin: 0 24px 12px 24px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.categories .skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.categories .skills div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 327px;
+  height: 72px;
+  margin: 0 24px 12px 24px;
+  border-bottom: 1px solid #dfe1e6;
+}
