@@ -39,7 +39,7 @@ html {
 .headline {
   width: 375px;
   height: 700px;
-  background-image: url(/img/header-shapes\ mobile.png);
+  background-image: url(./img/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: 375px 700px;
 }
@@ -170,7 +170,7 @@ html {
 
 .frame2 li {
   margin: 0 15px 0 15px;
-  list-style-image: url(/img/Counter.svg);
+  list-style-image: url(./img/Counter.svg);
   font-size: 1.3rem;
   font-weight: 600;
   color: #7a869a;
