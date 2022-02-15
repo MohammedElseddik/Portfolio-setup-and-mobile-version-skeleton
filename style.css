@@ -137,7 +137,7 @@ body {
   margin: 16px 16px 0 16px;
 }
 
-.contact-form__me h1 {
+.contact-form__me h2 {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
@@ -145,7 +145,7 @@ body {
   font-weight: bold;
   line-height: 52px;
   margin-bottom: 12px;
-  margin-top: 100px;
+  margin-top: 103px;
 }
 
 .work-section .card-work h1 {
@@ -439,6 +439,9 @@ body {
   border-radius: 60px 0 0 0;
   background-image: url(./img/contact-form-shapes-mobile.svg);
   background-color: #6070ff;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 270px 850px;
 }
 
 .contact-form__me {
@@ -501,5 +504,4 @@ body {
   display: block;
   width: 134px;
   margin: 32px auto;
-  margin-bottom: 0;
 }
