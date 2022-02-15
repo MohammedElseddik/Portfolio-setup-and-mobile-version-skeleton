@@ -234,7 +234,7 @@ body {
 
 .about-section {
   width: 375px;
-  padding: 114px 24px;
+  padding: 114px 24px 45px 24px;
   border-top-right-radius: 60px;
   background-color: #fff;
 }
@@ -383,4 +383,50 @@ body {
   flex-direction: column;
   width: 327px;
   border-bottom: 1px solid #dfe1e6;
+}
+
+.contact-form {
+  margin-top: 114px;
+  padding: 103px 0 8 0;
+  background-image: url(./img/contact-form-shapes-mobile.svg);
+  background-color: #6070FF;
+}
+
+.contact-form__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}
+
+.contact-form__me h1 {
+ margin-bottom: 12px;
+}
+
+.contact-form__me p {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-form__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form__info input {
+  margin: 20px auto;
+  width: 327px;
+}
+
+.contact-form__info textarea {
+  margin: 22px auto;
+  width: 327px;
+  padding: 15px 38px 15px 16px;
+  resize: none;
+}
+
+.contact-form__btn {
+  width: 140px;
+  height: 48px;
 }
