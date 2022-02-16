@@ -48,26 +48,25 @@ body {
   .main-bar__items {
     list-style: none;
     display: flex;
-    
   }
-  
+
   .main-bar__item {
     padding: 25px 32px 0 0;
   }
-
 }
 
 .headline {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  width: 100%;
-  padding: 118px 24px 136px 24px;
   background-color: #fff;
   background-image: url(./img/header-shapes\ mobile1.png);
   background-repeat: no-repeat;
   background-size: 375px 700px;
   border-bottom-left-radius: 20%;
+  padding: 118px 24px 136px 24px;
+  margin-bottom: 114px;
+  width: 100%;
 }
 
 .container {
@@ -83,7 +82,6 @@ body {
   font-style: normal;
   font-weight: bold;
   line-height: 52px;
-  padding: 0;
 }
 
 .container p {
@@ -91,7 +89,6 @@ body {
   line-height: 24px;
   color: #344563;
   font-size: 1.6rem;
-  padding: 0;
 }
 
 .contact-me {
@@ -114,7 +111,6 @@ body {
 .contact-me ul {
   display: flex;
   justify-content: space-between;
-  padding: 0;
   width: 170.17px;
   height: 20px;
 }
@@ -166,7 +162,6 @@ body {
   font-weight: bold;
   font-style: normal;
   line-height: 44px;
- 
 }
 
 .frame2 {
