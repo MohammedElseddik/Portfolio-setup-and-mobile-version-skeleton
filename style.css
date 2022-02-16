@@ -26,6 +26,10 @@ body {
   background-color: #fff;
 }
 
+.main-bar__items {
+  display: none;
+}
+
 .logo {
   width: 9.5rem;
   color: #6070ff;
@@ -41,17 +45,25 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  .nav-bar {
+    padding: 15px 142px 0 142px;
+  }
+
   .menu {
     display: none;
   }
-
+  
   .main-bar__items {
-    list-style: none;
     display: flex;
-  }
-
-  .main-bar__item {
-    padding: 25px 32px 0 0;
+    color: #344563;
+    justify-content: space-around;
+    gap: 3.2em;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
   }
 }
 
