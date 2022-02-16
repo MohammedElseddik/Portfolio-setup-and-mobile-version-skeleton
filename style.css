@@ -13,6 +13,7 @@ html {
 
 body {
   background-color: #f5f5f5;
+  min-width: 345px;
 }
 
 .nav-bar {
@@ -20,15 +21,13 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 375px;
-  padding: 14px 24px;
-  margin: 0;
+  width: 100%;
+  padding: 24px;
   background-color: #fff;
 }
 
 .logo {
-  width: 85px;
-  height: 20px;
+  width: 9.5rem;
   color: #6070ff;
   text-decoration: none;
   font-size: 1.8rem;
@@ -38,13 +37,32 @@ body {
 }
 
 .menu {
-  width: 16px;
-  height: 12px;
+  width: 2.7rem;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    display: none;
+  }
+
+  .main-bar__items {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .main-bar__item {
+    padding: 25px 32px 0 0;
+  }
+
 }
 
 .headline {
-  width: 375px;
-  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 100%;
+  padding: 118px 24px 136px 24px;
   background-color: #fff;
   background-image: url(./img/header-shapes\ mobile1.png);
   background-repeat: no-repeat;
@@ -56,39 +74,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 3em;
 }
 
 .container h1 {
   color: #172b4d;
   font-size: 4rem;
-  font-weight: bold;
   font-style: normal;
-  width: 327px;
+  font-weight: bold;
   line-height: 52px;
   padding: 0;
-  margin: 128px 24px 0 24px;
 }
 
 .container p {
-  width: 327px;
   height: 146px;
   line-height: 24px;
   color: #344563;
   font-size: 1.6rem;
   padding: 0;
-  margin: 12px 24px;
 }
 
 .contact-me {
   display: flex;
   flex-direction: column;
+  gap: 3em;
 }
 
 .contact-me p {
   color: #7f8cff;
   font-size: 1.6rem;
   height: 24px;
-  margin: 0 0 12px 24px;
   line-height: 24px;
 }
 
@@ -102,7 +117,6 @@ body {
   padding: 0;
   width: 170.17px;
   height: 20px;
-  margin: 0 0 136px 24px;
 }
 
 .contact-me li {
@@ -114,9 +128,9 @@ body {
   grid-template-rows: auto;
   grid-template-columns: auto;
   justify-items: center;
-  width: 375px;
+  width: 100%;
   justify-content: center;
-  margin: 114px 0;
+  padding: 24px;
   row-gap: 88px;
   column-gap: 0;
   background-color: #f5f5f5;
@@ -126,15 +140,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 327px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
+  gap: 3em;
   background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+  padding: 16px;
 }
 
 .work-section .card-work img {
-  margin: 16px 16px 0 16px;
+  width: 100%;
 }
 
 .contact-form__me h2 {
@@ -144,8 +158,6 @@ body {
   font-style: normal;
   font-weight: bold;
   line-height: 52px;
-  margin-bottom: 12px;
-  margin-top: 103px;
 }
 
 .work-section .card-work h1 {
@@ -154,14 +166,13 @@ body {
   font-weight: bold;
   font-style: normal;
   line-height: 44px;
-  margin: 0 16px 0 16px;
+ 
 }
 
 .frame2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 16px 12px 16px;
   padding: 8px 0;
 }
 
@@ -193,21 +204,20 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 28px;
-  margin: 12px 24px 20px 24px;
   text-align: center;
 }
 
 .work-section .card-work > p {
   font-size: 1.5rem;
   line-height: 24px;
-  margin: 0 16px 12px 16px;
   color: #344563;
 }
 
 .work-section .programing-lamguages {
   display: flex;
-  margin-left: 16px;
+  gap: 1em;
   padding: 0;
+  width: 100%;
 }
 
 .categories-list li {
@@ -216,7 +226,6 @@ body {
 
 .work-section .programing-lamguages li {
   padding: 8px 12px;
-  margin: 0 8px 24px 0;
   list-style: none;
   font-size: 1.2rem;
   font-style: normal;
@@ -227,18 +236,17 @@ body {
 }
 
 .about-section button {
-  width: 162px;
-  height: 48px;
-  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #396df2;
   font-size: 1.7rem;
   font-weight: 500;
-  line-height: 24px;
+  height: 48px;
   letter-spacing: 1px;
-  margin: 0 0 48px 0;
-  color: #396df2;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background-color: #fff;
+  line-height: 24px;
+  padding: 12px;
+  width: 50%;
 }
 
 .about-section button:hover {
@@ -251,13 +259,14 @@ body {
   color: #fff;
 }
 
-.work-section .card-work button {
+.work-section__btn {
+  width: 40%;
+  min-width: 135.837px;
   padding: 12px;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 1px;
-  margin: 0 0 28px 16px;
   color: #396df2;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -275,43 +284,45 @@ body {
 }
 
 .about-section {
-  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3em;
+  width: 100%;
   padding: 114px 24px 114px 24px;
   border-top-right-radius: 60px;
   background-color: #fff;
 }
 
-.about-section .container {
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 3em;
   background-color: #fff;
 }
 
-.about-section .container h1 {
+.about-container h1 {
   color: #172b4d;
   font-size: 4rem;
   font-weight: bold;
   font-style: normal;
-  width: 327px;
   line-height: 52px;
   padding: 0;
   margin: 0;
 }
 
-.about-section .container p {
-  width: 327px;
-  height: 146px;
+.about-container p {
   line-height: 24px;
   color: #344563;
   font-size: 1.6rem;
   padding: 0;
-  margin: 12px 0;
 }
 
 .about-section .contact {
   display: flex;
   flex-direction: column;
+  gap: 3em;
   background-color: #fff;
 }
 
@@ -319,7 +330,6 @@ body {
   color: #7f8cff;
   font-size: 1.6rem;
   height: 24px;
-  margin: 0 0 16px 0;
   line-height: 24px;
 }
 
@@ -330,10 +340,7 @@ body {
 .about-section .contact ul {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin: 0 0 22px 0;
-  width: 170.17px;
-  height: 20px;
+  width: 60%;
 }
 
 .about-section .contact li {
@@ -355,14 +362,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 327px;
-  height: 72px;
-  margin: 0 12px 12px 12px;
 }
 
 .categories-list .langguages {
   display: flex;
   flex-direction: column;
+  gap: 1em;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -390,7 +395,7 @@ body {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 12px 12px 12px;
+  padding: 0.5em;
   background-color: #f7f7f9;
   border-radius: 8px;
 }
@@ -415,7 +420,6 @@ body {
 .categories-list .frameworks {
   display: flex;
   flex-direction: column;
-  width: 327px;
   margin: 12px 0;
   border-bottom: 1px solid #dfe1e6;
 }
@@ -423,31 +427,35 @@ body {
 .categories-list .skills {
   display: flex;
   flex-direction: column;
-  width: 327px;
   border-bottom: 1px solid #dfe1e6;
 }
 
 .contact-form-section {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   margin: 0 0 8px 0;
-  width: 375px;
+  width: 100%;
 }
 
 .contact-form {
-  border-radius: 60px 0 0 0;
-  background-image: url(./img/contact-form-shapes-mobile.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
   background-color: #6070ff;
-  background-repeat: no-repeat;
+  background-image: url(./img/contact-form-shapes-mobile.svg);
   background-position: right top;
+  background-repeat: no-repeat;
   background-size: 270px 850px;
+  border-radius: 60px 0 0 0;
+  padding: 103px 24px 8px 24px;
 }
 
 .contact-form__me {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  text-align: center;
   width: 100%;
 }
 
@@ -455,25 +463,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
 }
 
 .contact-form__info input {
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   font-size: 1.7rem;
-  margin: 20px auto;
   padding: 15px 38px 15px 16px;
-  width: 327px;
+  width: 100%;
+  min-width: 311.2px;
+  max-width: ;
 }
 
 .contact-form__info textarea {
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   font-size: 1.5rem;
-  margin: 22px auto;
   padding: 15px 38px 15px 16px;
   resize: none;
-  width: 327px;
+  width: 100%;
 }
 
 .contact-form__btn {
@@ -481,13 +490,14 @@ body {
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   color: #6070ff;
-  font-size: 17px;
-  font-style: normal;
+  padding: 12px;
+  font-size: 1.7rem;
   font-weight: 500;
-  height: 48px;
   line-height: 24px;
-  margin: 0 0 24px 24px;
-  width: 140px;
+  letter-spacing: 1px;
+  min-width: 129px;
+  max-width: 148.15px;
+  width: 40%;
 }
 
 .contact-form__btn:hover {
