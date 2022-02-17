@@ -67,21 +67,19 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  gap: 3em;
   background-color: #fff;
   background-image: url(./img/header-shapes\ mobile1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-bottom-left-radius: 60px;
-  padding: 118px 24px 136px 24px;
+  padding: 100px 24px;
   width: 100%;
-  height: 100vh;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 3em;
 }
 
@@ -218,7 +216,7 @@ body {
 }
 
 .contact-form__me p:hover {
-  transform: translate(5px,0);
+  transform: translate(5px, 0);
 }
 
 .card-work__info > p {
@@ -563,7 +561,6 @@ img:hover {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     gap: 2em;
-    height: 100vh;
   }
 
   .container {
