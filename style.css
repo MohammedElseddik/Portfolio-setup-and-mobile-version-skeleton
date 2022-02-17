@@ -38,6 +38,26 @@ body {
   line-height: 20px;
   font-style: normal;
   font-weight: bold;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1.5);
+  }
+
+  20% {
+    transform: scale(1.5) rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .menu {
@@ -518,7 +538,7 @@ img:hover {
 
 @media screen and (min-width: 992px) {
   .nav-bar {
-    padding: 15px 142px 0 142px;
+    padding: 30px 142px 0 142px;
   }
 
   .menu {
