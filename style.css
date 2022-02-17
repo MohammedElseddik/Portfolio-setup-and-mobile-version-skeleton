@@ -38,6 +38,26 @@ body {
   line-height: 20px;
   font-style: normal;
   font-weight: bold;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1.5);
+  }
+
+  20% {
+    transform: scale(1.5) rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .menu {
@@ -47,21 +67,19 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  gap: 3em;
   background-color: #fff;
   background-image: url(./img/header-shapes\ mobile1.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-bottom-left-radius: 60px;
-  padding: 118px 24px 136px 24px;
+  padding: 100px 24px;
   width: 100%;
-  height: 100vh;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 3em;
 }
 
@@ -194,12 +212,24 @@ body {
   font-weight: normal;
   line-height: 28px;
   text-align: center;
+  transition: all 0.3s linear;
+}
+
+.about-container p {
+  line-height: 24px;
+  color: #344563;
+  font-size: 1.6rem;
+  padding: 0;
 }
 
 .card-work__info > p {
   font-size: 1.5rem;
   line-height: 24px;
   color: #344563;
+}
+
+.contact-form__me p:hover {
+  transform: translate(5px, 0);
 }
 
 .programing-lamguages {
@@ -238,6 +268,7 @@ body {
   width: 50%;
   max-width: 247.4px;
   min-width: 160px;
+  transition: all 0.5s ease-in;
 }
 
 .about-section button:hover {
@@ -262,6 +293,7 @@ body {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
+  transition: all 0.5s ease-in;
 }
 
 .card-work button:hover {
@@ -301,13 +333,6 @@ body {
   line-height: 52px;
   padding: 0;
   margin: 0;
-}
-
-.about-container p {
-  line-height: 24px;
-  color: #344563;
-  font-size: 1.6rem;
-  padding: 0;
 }
 
 .about-section .contact {
@@ -391,14 +416,6 @@ body {
   border-radius: 8px;
   padding: 10px 20px;
 }
-
-/* .categories-list .langguages li p {
-
-} */
-
-/* .categories-list .langguages li img {
-  padding: 9px 16px 9.72px 12px;
-} */
 
 .categories-list h2 {
   padding: 0;
@@ -490,6 +507,7 @@ body {
   min-width: 129px;
   max-width: 148.15px;
   width: 40%;
+  transition: all 0.5s ease-in;
 }
 
 .contact-form__btn:hover {
@@ -508,9 +526,17 @@ body {
   margin: 32px auto;
 }
 
+img {
+  transition: all 0.5s ease-in;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 992px) {
   .nav-bar {
-    padding: 15px 142px 0 142px;
+    padding: 30px 142px 0 142px;
   }
 
   .menu {
@@ -535,7 +561,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     gap: 2em;
-    height: 100vh;
   }
 
   .container {
