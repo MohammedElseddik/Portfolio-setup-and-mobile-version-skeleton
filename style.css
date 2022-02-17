@@ -194,6 +194,11 @@ body {
   font-weight: normal;
   line-height: 28px;
   text-align: center;
+  transition: all 0.3s linear;
+}
+
+.contact-form__me p:hover {
+  transform: translate(5px,0);
 }
 
 .card-work__info > p {
@@ -508,7 +513,7 @@ img {
 }
 
 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 992px) {
