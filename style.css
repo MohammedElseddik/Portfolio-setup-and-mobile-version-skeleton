@@ -503,6 +503,14 @@ body {
   margin: 32px auto;
 }
 
+img {
+  transition: all 0.5s ease-in;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
 @media screen and (min-width: 992px) {
   .nav-bar {
     padding: 15px 142px 0 142px;
