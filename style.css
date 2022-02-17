@@ -44,29 +44,6 @@ body {
   width: 2.7rem;
 }
 
-@media screen and (min-width: 992px) {
-  .nav-bar {
-    padding: 15px 142px 0 142px;
-  }
-
-  .menu {
-    display: none;
-  }
-  
-  .main-bar__items {
-    display: flex;
-    color: #344563;
-    justify-content: space-around;
-    gap: 3.2em;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    list-style: none;
-  }
-}
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -74,11 +51,11 @@ body {
   background-color: #fff;
   background-image: url(./img/header-shapes\ mobile1.png);
   background-repeat: no-repeat;
-  background-size: 375px 700px;
-  border-bottom-left-radius: 20%;
+  background-size: 375px auto;
+  border-bottom-left-radius: 60px;
   padding: 118px 24px 136px 24px;
-  margin-bottom: 114px;
   width: 100%;
+  height: 100vh;
 }
 
 .container {
@@ -97,7 +74,6 @@ body {
 }
 
 .container p {
-  height: 146px;
   line-height: 24px;
   color: #344563;
   font-size: 1.6rem;
@@ -123,7 +99,8 @@ body {
 .contact-me ul {
   display: flex;
   justify-content: space-between;
-  width: 170.17px;
+  width: 60%;
+  max-width: 239.512px;
   height: 20px;
 }
 
@@ -138,13 +115,13 @@ body {
   justify-items: center;
   width: 100%;
   justify-content: center;
-  padding: 24px;
+  padding: 114px 24px;
   row-gap: 88px;
   column-gap: 0;
   background-color: #f5f5f5;
 }
 
-.work-section .card-work {
+.card-work {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,8 +132,14 @@ body {
   padding: 16px;
 }
 
-.work-section .card-work img {
+.card-work__img {
   width: 100%;
+}
+
+.card-work__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .contact-form__me h2 {
@@ -168,7 +151,7 @@ body {
   line-height: 52px;
 }
 
-.work-section .card-work h1 {
+.card-work h1 {
   color: #172b4d;
   font-size: 3.2rem;
   font-weight: bold;
@@ -206,7 +189,6 @@ body {
 
 .contact-form__me p {
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: normal;
@@ -214,13 +196,13 @@ body {
   text-align: center;
 }
 
-.work-section .card-work > p {
+.card-work__info > p {
   font-size: 1.5rem;
   line-height: 24px;
   color: #344563;
 }
 
-.work-section .programing-lamguages {
+.programing-lamguages {
   display: flex;
   gap: 1em;
   padding: 0;
@@ -231,7 +213,7 @@ body {
   list-style: none;
 }
 
-.work-section .programing-lamguages li {
+.programing-lamguages li {
   padding: 8px 12px;
   list-style: none;
   font-size: 1.2rem;
@@ -254,6 +236,8 @@ body {
   line-height: 24px;
   padding: 12px;
   width: 50%;
+  max-width: 247.4px;
+  min-width: 160px;
 }
 
 .about-section button:hover {
@@ -280,12 +264,12 @@ body {
   background-color: #fff;
 }
 
-.work-section .card-work button:hover {
+.card-work button:hover {
   background-color: #6070ff;
   color: #fff;
 }
 
-.work-section .card-work button:active {
+.card-work button:active {
   background-color: #2230d2;
   color: #fff;
 }
@@ -348,6 +332,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 60%;
+  max-width: 239.512px;
 }
 
 .about-section .contact li {
@@ -407,14 +392,13 @@ body {
   border-radius: 8px;
 }
 
-.categories-list .langguages li p {
-  width: 215px;
-  height: 24px;
-}
+/* .categories-list .langguages li p {
 
-.categories-list .langguages li img {
+} */
+
+/* .categories-list .langguages li img {
   padding: 9px 16px 9.72px 12px;
-}
+} */
 
 .categories-list h2 {
   padding: 0;
@@ -471,6 +455,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2em;
+  width: 100%;
 }
 
 .contact-form__info input {
@@ -480,7 +465,6 @@ body {
   padding: 15px 38px 15px 16px;
   width: 100%;
   min-width: 311.2px;
-  max-width: ;
 }
 
 .contact-form__info textarea {
@@ -490,6 +474,7 @@ body {
   padding: 15px 38px 15px 16px;
   resize: none;
   width: 100%;
+  min-width: 311.2px;
 }
 
 .contact-form__btn {
@@ -521,4 +506,133 @@ body {
   display: block;
   width: 134px;
   margin: 32px auto;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-bar {
+    padding: 15px 142px 0 142px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main-bar__items {
+    display: flex;
+    color: #344563;
+    justify-content: space-around;
+    gap: 3.2em;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+  }
+
+  .headline {
+    padding: 230px 260px 255px 260px;
+    background-image: url(./img/Desktop/Header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    gap: 2em;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+  }
+
+  .container h1 {
+    font-size: 4.8rem;
+  }
+
+  .container p {
+    font-size: 2rem;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .work-section {
+    padding: 142px;
+  }
+
+  .card-work {
+    flex-direction: row;
+  }
+
+  .card-work__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-work__info {
+    gap: 2.5em;
+  }
+
+  .work-reversed-row {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-section {
+    flex-direction: row;
+    padding: 142px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 3rem;
+  }
+
+  .skill-list {
+    width: 60%;
+  }
+
+  .categories-list .langguages {
+    flex-direction: row;
+  }
+
+  .categories-list .langguages li {
+    width: 30%;
+    display: block;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-form {
+    background-image: url(./img/Desktop/contact\ form-background-shapes.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 142px 319px;
+  }
+
+  .contact-form__info input {
+    border-radius: 2px;
+  }
+
+  .contact-form__info textarea {
+    border-radius: 2px;
+  }
+
+  .contact-form__info {
+    padding: 0 100px;
+  }
+
+  .contact-form__btn {
+    text-align: center;
+  }
+
+  .black-line {
+    display: none;
+  }
 }
