@@ -215,8 +215,11 @@ body {
   transition: all 0.3s linear;
 }
 
-.contact-form__me p:hover {
-  transform: translate(5px, 0);
+.about-container p {
+  line-height: 24px;
+  color: #344563;
+  font-size: 1.6rem;
+  padding: 0;
 }
 
 .card-work__info > p {
@@ -224,6 +227,11 @@ body {
   line-height: 24px;
   color: #344563;
 }
+
+.contact-form__me p:hover {
+  transform: translate(5px, 0);
+}
+
 
 .programing-lamguages {
   display: flex;
@@ -326,13 +334,6 @@ body {
   line-height: 52px;
   padding: 0;
   margin: 0;
-}
-
-.about-container p {
-  line-height: 24px;
-  color: #344563;
-  font-size: 1.6rem;
-  padding: 0;
 }
 
 .about-section .contact {
