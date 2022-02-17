@@ -51,7 +51,7 @@ body {
   background-color: #fff;
   background-image: url(./img/header-shapes\ mobile1.png);
   background-repeat: no-repeat;
-  background-size: 375px auto;
+  background-size: 100% 100%;
   border-bottom-left-radius: 60px;
   padding: 118px 24px 136px 24px;
   width: 100%;
