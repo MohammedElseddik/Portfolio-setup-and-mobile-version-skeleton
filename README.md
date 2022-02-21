@@ -8,7 +8,7 @@
 - linter for code analysis
 
 ## Deployment
-
+https://mohammedelseddik.github.io/Portfolio-setup-and-mobile-version-skeleton/
 
 ## Authors
 
