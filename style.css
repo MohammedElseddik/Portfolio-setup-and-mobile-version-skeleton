@@ -545,14 +545,26 @@ img:hover {
 
   .main-bar__items {
     display: flex;
-    color: #344563;
     justify-content: space-around;
     gap: 3.2em;
+    list-style: none;
+  }
+
+  .main-bar__item a {
+    text-decoration: none;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    list-style: none;
+    color: #344563;
+    transition: all 0.2s ease-in;
+  }
+
+  .main-bar__item a:hover {
+    color: #fff;
+    background-color: #344563;
+    padding: 5px 8px;
+    border-radius: 4px;
   }
 
   .headline {
