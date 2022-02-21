@@ -1,11 +1,13 @@
  Description of the project: 
-    This project represents the mobile version of my portfolio where all my projects and skills will be uploaded on it in the future.
+    This project represents the mobile version and the Desktop version of my portfolio where all my projects and skills will be uploaded on it in the future.
 
 
 ## Built With
 
 - Major languages: HTML, CSS
 - linter for code analysis
+
+## Deployment
 
 
 ## Authors
