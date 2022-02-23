@@ -519,7 +519,6 @@ body {
   line-height: 24px;
   letter-spacing: 1px;
   min-width: 129px;
-  /* max-width: 148.15px; */
   width: 40%;
   transition: all 0.5s ease-in;
 }
