@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-  color: #4255FF;
+  color: #4255ff;
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 20px;
@@ -103,7 +103,7 @@ body {
 }
 
 .contact-me p {
-  color: #475DFF;
+  co475dff#475dff;
   font-weight: 500;
   font-size: 1.6rem;
   height: 24px;
@@ -264,7 +264,7 @@ body {
   background-color: #fff;
   border-radius: 8px;
   border: 3px solid #6070ff;
-  color: #3D51FF;
+  color: #3d51ff;
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -277,17 +277,17 @@ body {
 }
 
 .about-section button:hover {
-  background-color: #4D5EFF;
+  background-color: #4d5eff;
   color: #fff;
 }
 
 .about-section button:focus {
-  background-color: #4D5EFF;
+  background-color: #4d5eff;
   color: #fff;
 }
 
 .about-section button:active {
-  background-color: #5263FF;
+  background-color: #5263ff;
   color: #fff;
 }
 
@@ -307,17 +307,17 @@ body {
 }
 
 .card-work button:hover {
-  background-color: #4D5EFF;
+  background-color: #4d5eff;
   color: #fff;
 }
 
 .card-work button:focus {
-  background-color: #4D5EFF;
+  background-color: #4d5eff;
   color: #fff;
 }
 
 .card-work button:active {
-  background-color: #5263FF;
+  background-color: #5263ff;
   color: #fff;
 }
 
@@ -358,7 +358,7 @@ body {
 }
 
 .about-section .contact p {
-  color: #475DFF;
+  color: #475dff;
   font-size: 1.6rem;
   font-weight: 500;
   height: 24px;
@@ -526,7 +526,7 @@ body {
 }
 
 .contact-form__btn:hover {
-  background-color: #4D5EFF;
+  background-color: #4d5eff;
   color: #fff;
   border: 3.5px solid #fff;
   font-weight: bold;
