@@ -263,7 +263,7 @@ body {
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid #6070ff;
-  color: #396df2;
+  color: #3D51FF;
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -276,17 +276,17 @@ body {
 }
 
 .about-section button:hover {
-  background-color: #6070ff;
+  background-color: #4D5EFF;
   color: #fff;
 }
 
 .about-section button:focus {
-  background-color: #6070ff;
+  background-color: #4D5EFF;
   color: #fff;
 }
 
 .about-section button:active {
-  background-color: #2230d2;
+  background-color: #5263FF;
   color: #fff;
 }
 
@@ -298,7 +298,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 1px;
-  color: #396df2;
+  color: #3D51FF;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
@@ -306,17 +306,17 @@ body {
 }
 
 .card-work button:hover {
-  background-color: #6070ff;
+  background-color: #4D5EFF;
   color: #fff;
 }
 
 .card-work button:focus {
-  background-color: #6070ff;
+  background-color: #4D5EFF;
   color: #fff;
 }
 
 .card-work button:active {
-  background-color: #2230d2;
+  background-color: #5263FF;
   color: #fff;
 }
 
@@ -517,7 +517,7 @@ body {
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 0.03em;
   min-width: 129px;
   width: 40%;
   transition: all 0.5s ease-in;
