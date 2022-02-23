@@ -103,7 +103,8 @@ body {
 }
 
 .contact-me p {
-  color: #7f8cff;
+  color: #475DFF;
+  font-weight: 500;
   font-size: 1.6rem;
   height: 24px;
   line-height: 24px;
@@ -357,8 +358,9 @@ body {
 }
 
 .about-section .contact p {
-  color: #7f8cff;
+  color: #475DFF;
   font-size: 1.6rem;
+  font-weight: 500;
   height: 24px;
   line-height: 24px;
 }
@@ -524,18 +526,24 @@ body {
 }
 
 .contact-form__btn:hover {
-  background-color: #6070ff;
+  background-color: #4D5EFF;
   color: #fff;
+  border: 3.5px solid #fff;
+  font-weight: bold;
 }
 
 .contact-form__btn:focus {
   background-color: #6070ff;
   color: #fff;
+  border: 3.5px solid #fff;
+  font-weight: bold;
 }
 
 .contact-form__btn:active {
   background-color: #2230d2;
   color: #fff;
+  border: 3.5px solid #fff;
+  font-weight: bold;
 }
 
 .black-line {
