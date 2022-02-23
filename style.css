@@ -31,7 +31,6 @@ body {
 }
 
 .logo {
-  width: 9.5rem;
   color: #6070ff;
   text-decoration: none;
   font-size: 1.8rem;
@@ -119,7 +118,6 @@ body {
   justify-content: space-between;
   width: 60%;
   max-width: 239.512px;
-  height: 20px;
 }
 
 .contact-me li {
@@ -158,6 +156,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+
+.card-work__info h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 52px;
 }
 
 .contact-form__me h2 {
@@ -261,11 +266,10 @@ body {
   color: #396df2;
   font-size: 1.7rem;
   font-weight: 500;
-  height: 48px;
   letter-spacing: 1px;
   line-height: 24px;
   padding: 12px;
-  width: 50%;
+  width: 60%;
   max-width: 247.4px;
   min-width: 160px;
   transition: all 0.5s ease-in;
@@ -505,7 +509,7 @@ body {
   line-height: 24px;
   letter-spacing: 1px;
   min-width: 129px;
-  max-width: 148.15px;
+  /* max-width: 148.15px; */
   width: 40%;
   transition: all 0.5s ease-in;
 }
@@ -594,11 +598,13 @@ img:hover {
 
 @media screen and (min-width: 992px) {
   .work-section {
-    padding: 142px;
+    /* padding: 142px 80px; */
   }
 
   .card-work {
     flex-direction: row;
+    width: 100%;
+    padding: 40px;
   }
 
   .card-work__img img {
