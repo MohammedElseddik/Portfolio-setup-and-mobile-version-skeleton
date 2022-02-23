@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-  color: #6070ff;
+  color: #4255FF;
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 20px;
@@ -263,7 +263,7 @@ body {
 .about-section button {
   background-color: #fff;
   border-radius: 8px;
-  border: 1px solid #6070ff;
+  border: 3px solid #6070ff;
   color: #3D51FF;
   font-size: 1.7rem;
   font-weight: 500;
@@ -300,7 +300,7 @@ body {
   line-height: 24px;
   letter-spacing: 1px;
   color: #3D51FF;
-  border: 1px solid #6070ff;
+  border: 3px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
   transition: all 0.5s ease-in;
