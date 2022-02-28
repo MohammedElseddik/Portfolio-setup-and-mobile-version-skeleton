@@ -7,11 +7,11 @@ const navBar = document.querySelector(".nav-bar");
 const secondBar = document.querySelector(".second-bar");
 const thirdBar = document.querySelector(".third-bar");
 
-const applyStyles = function() {
+const applyStyles = function () {
   bar.forEach((elem) => {
     elem.classList.toggle("bar-color");
   });
-  document.body.classList.toggle('overlay');
+  document.body.classList.toggle("overlay");
   firstBar.classList.toggle("transform");
   hamburgerMenu.classList.toggle("mobile-hamburger-menu");
   mainBarItems.classList.toggle("main-bar__items-visible");
@@ -21,4 +21,6 @@ const applyStyles = function() {
   thirdBar.classList.toggle("transform");
 };
 
-['click', 'keypress'].forEach(event => {hamburgerMenu.addEventListener(event, applyStyles)});
+["click", "keypress"].forEach((event) => {
+  hamburgerMenu.addEventListener(event, applyStyles);
+});
