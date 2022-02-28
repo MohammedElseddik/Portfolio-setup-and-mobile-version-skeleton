@@ -7,7 +7,7 @@ const navBar = document.querySelector('.nav-bar');
 const secondBar = document.querySelector('.second-bar');
 const thirdBar = document.querySelector('.third-bar');
 
-const applyStyles = function () {
+function applyStyles() {
   bar.forEach((elem) => {
     elem.classList.toggle('bar-color');
   });
@@ -22,5 +22,5 @@ const applyStyles = function () {
 };
 
 ['click', 'keypress'].forEach((event) => {
-  hamburgerMenu.addEventListener(event, applyStyles)
+  hamburgerMenu.addEventListener(event, applyStyles);
 });
