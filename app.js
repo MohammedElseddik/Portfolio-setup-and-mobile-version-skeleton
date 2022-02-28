@@ -19,7 +19,7 @@ function applyStyles() {
   navBar.classList.toggle('expand-navbar');
   secondBar.classList.toggle('hidden');
   thirdBar.classList.toggle('transform');
-};
+}
 
 ['click', 'keypress'].forEach((event) => {
   hamburgerMenu.addEventListener(event, applyStyles);
