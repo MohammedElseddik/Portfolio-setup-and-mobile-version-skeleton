@@ -37,12 +37,33 @@ body {
   width: 100%;
   height: 100vh;
   opacity: 0.9;
-  background-color: #6070FF;
+  background-color: #6070ff;
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  transition: all 1s ease;
 }
 
 .main-bar__items {
   display: none;
+}
+
+.main-bar__items-visible {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .logo {
@@ -629,6 +650,14 @@ img:hover {
     justify-content: space-around;
     gap: 3.2em;
     list-style: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .expand {
+    display: none;
   }
 
   .main-bar__item a {
