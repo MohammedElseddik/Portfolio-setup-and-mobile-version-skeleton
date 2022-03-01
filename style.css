@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,8 +27,71 @@ body {
   background-color: #fff;
 }
 
+.expand-navbar {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+  background-color: #6070ff;
+  position: fixed;
+  transition: all 1.5s ease;
+}
+
 .main-bar__items {
   display: none;
+}
+
+.main-bar__items-visible {
+  align-items: flex-start;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  list-style: none;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.contact-me li {
+  list-style: none;
+}
+
+.frame2 li {
+  margin: 0 15px 0 15px;
+  list-style-image: url(./img/Counter.svg);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #7a869a;
+}
+
+.categories-list li {
+  list-style: none;
+}
+
+.programing-lamguages li {
+  padding: 8px 12px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #6070ff;
+  line-height: 16px;
+  border-radius: 8px;
+  background-color: #ebebff;
+}
+
+.main-bar__items-visible li {
+  transition: all 0.4s ease;
+}
+
+.main-bar__items-visible li:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .logo {
@@ -45,6 +109,12 @@ body {
   animation-direction: normal;
 }
 
+.mobile-logo {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
 @keyframes rotate {
   0% {
     transform: scale(1.5);
@@ -59,8 +129,39 @@ body {
   }
 }
 
-.menu {
-  width: 2.7rem;
+.mobile-hamburger-menu {
+  top: 24px;
+  right: 24px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: #4255ff;
+  display: block;
+  height: 4px;
+  margin: 4px;
+  transition: all 0.4s ease;
+  width: 32px;
+  border-radius: 3px;
+}
+
+.bar-color {
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.transform.first-bar {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.transform.third-bar {
+  transform: rotate(-45deg);
 }
 
 .headline {
@@ -121,10 +222,6 @@ body {
   max-width: 239.512px;
 }
 
-.contact-me li {
-  list-style: none;
-}
-
 .work-section {
   display: grid;
   justify-items: center;
@@ -159,7 +256,7 @@ body {
   gap: 2em;
 }
 
-.card-work__info h2 {
+h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 4rem;
@@ -203,14 +300,6 @@ body {
   padding: 0;
 }
 
-.frame2 li {
-  margin: 0 15px 0 15px;
-  list-style-image: url(./img/Counter.svg);
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #7a869a;
-}
-
 .contact-form__me p {
   color: #fff;
   font-size: 2rem;
@@ -243,21 +332,6 @@ body {
   gap: 1em;
   padding: 0;
   width: 100%;
-}
-
-.categories-list li {
-  list-style: none;
-}
-
-.programing-lamguages li {
-  padding: 8px 12px;
-  list-style: none;
-  font-size: 1.2rem;
-  font-style: normal;
-  color: #6070ff;
-  line-height: 16px;
-  border-radius: 8px;
-  background-color: #ebebff;
 }
 
 .about-section button {
@@ -574,6 +648,14 @@ img:hover {
     justify-content: space-around;
     gap: 3.2em;
     list-style: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .expand-navbar {
+    display: none;
   }
 
   .main-bar__item a {
