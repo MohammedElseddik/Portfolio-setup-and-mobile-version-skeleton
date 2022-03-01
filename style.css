@@ -17,6 +17,10 @@ body {
   min-width: 345px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -233,6 +237,16 @@ a {
   padding: 114px 24px;
   row-gap: 88px;
   width: 100%;
+}
+
+.popup {
+  width: 80vw;
+  height: 90vh;
+  background-color: #3d51ff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card-work {
