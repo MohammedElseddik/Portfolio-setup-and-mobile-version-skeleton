@@ -2,6 +2,7 @@ const bar = document.querySelectorAll('.bar');
 const firstBar = document.querySelector('.first-bar');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const mainBarItems = document.querySelector('.main-bar__items');
+const mainBarItemsLists = document.querySelectorAll('.main-bar__items li');
 const mylogo = document.querySelector('.logo');
 const navBar = document.querySelector('.nav-bar');
 const secondBar = document.querySelector('.second-bar');
@@ -11,7 +12,6 @@ function applyStyles() {
   bar.forEach((elem) => {
     elem.classList.toggle('bar-color');
   });
-  document.body.classList.toggle('overlay');
   firstBar.classList.toggle('transform');
   hamburgerMenu.classList.toggle('mobile-hamburger-menu');
   mainBarItems.classList.toggle('main-bar__items-visible');
@@ -23,4 +23,8 @@ function applyStyles() {
 
 ['click', 'keypress'].forEach((event) => {
   hamburgerMenu.addEventListener(event, applyStyles);
+});
+
+mainBarItemsLists.forEach((list) => {
+  list.addEventListener('click', applyStyles);
 });
