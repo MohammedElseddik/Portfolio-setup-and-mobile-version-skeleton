@@ -280,7 +280,7 @@ a {
 .pop-header {
   display: flex;
   justify-content: flex-end;
-  height: 0;
+  height: 29px;
 }
 
 .exit-btn {
