@@ -67,9 +67,10 @@ function createElements() {
   exitIcon.setAttribute('class', 'exit-btn');
 
   containerdiv.append(popHeader);
-  for (let i = 0; i < Object.values(projectsList[0]).length; i++) {
-    containerdiv.appendChild(Object.values(projectsList[0])[i]);
-  }
+  Object.values(projectsList[0]).forEach((item) => {
+    containerdiv.appendChild(item);
+  });
+
   popHeader.appendChild(exitIcon);
   BtnDiv.appendChild(seeLiveBtn);
   BtnDiv.appendChild(seeSourceBtn);

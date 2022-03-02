@@ -6,6 +6,7 @@
 
 - Major languages: HTML, CSS
 - linter for code analysis
+- JavaScript
 
 ## Deployment
 https://mohammedelseddik.github.io/Portfolio-setup-and-mobile-version-skeleton/
