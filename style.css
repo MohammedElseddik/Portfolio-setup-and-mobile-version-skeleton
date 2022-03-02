@@ -239,14 +239,120 @@ a {
   width: 100%;
 }
 
-.popup {
-  width: 80vw;
-  height: 90vh;
-  background-color: #3d51ff;
+.filter.active {
+  background-color: #99a2af;
+  filter: blur(10px);
+  height: 100%;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+  width: 100%;
+  z-index: 9;
   position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  min-width: 350px;
+  position: fixed;
+  border: 0.5px solid #99a2af;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 1s ease;
+  width: 87%;
+  z-index: 10;
+  padding: 24px;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.pop-header {
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+}
+
+.exit-btn {
+  font-size: 3rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.exit-btn:hover {
+  transform: scale(1.3) rotate(180deg);
+}
+
+.popup p {
+  font-size: 1.5rem;
+  color: #344563;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+ul[data-language="language-list"] {
+  border-bottom: 1px solid #ebecf0;
+  padding-bottom: 20px;
+}
+
+img[data-img="card-image"] {
+  width: 100%;
+}
+
+.pop-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-btn button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #3d51ff;
+  border: 3px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  gap: 0.3em;
+  transition: all 0.5s ease-in;
+}
+
+.about-section button {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 3px solid #6070ff;
+  color: #3d51ff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 24px;
+  padding: 12px;
+  width: 60%;
+  max-width: 247.4px;
+  min-width: 160px;
+  transition: all 0.5s ease-in;
+}
+
+.pop-btn button:hover {
+  background-color: #3d51ff;
+  color: #fff;
 }
 
 .card-work {
@@ -348,22 +454,6 @@ h2 {
   width: 100%;
 }
 
-.about-section button {
-  background-color: #fff;
-  border-radius: 8px;
-  border: 3px solid #6070ff;
-  color: #3d51ff;
-  font-size: 1.7rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 24px;
-  padding: 12px;
-  width: 60%;
-  max-width: 247.4px;
-  min-width: 160px;
-  transition: all 0.5s ease-in;
-}
-
 .about-section button:hover {
   background-color: #4d5eff;
   color: #fff;
@@ -392,6 +482,11 @@ h2 {
   border-radius: 8px;
   background-color: #fff;
   transition: all 0.5s ease-in;
+}
+
+.work-section__btn:hover {
+  background-color: #4d5eff;
+  color: #fff;
 }
 
 .card-work button:hover {
@@ -640,7 +735,7 @@ h2 {
   margin: 32px auto;
 }
 
-img {
+.work-section img {
   transition: all 0.5s ease-in;
 }
 
@@ -724,6 +819,77 @@ img:hover {
 @media screen and (min-width: 992px) {
   .work-section {
     /* padding: 142px 80px; */
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    min-width: 350px;
+    position: fixed;
+    border: 0.5px solid #99a2af;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    width: 87%;
+    height: 92%;
+    z-index: 10;
+    padding: 18px;
+  }
+
+  .popup-container {
+    gap: 0.7em;
+  }
+
+  .pop-header {
+    display: inline-block;
+    position: relative;
+    left: 95%;
+  }
+
+  h2[data-title="title"] {
+    font-size: 2.2rem;
+    display: inline;
+    width: fit-content;
+  }
+
+  .popup img[data-img="card-image"] {
+    width: 95%;
+    height: 40%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .popup ul[data-language="language-list"] {
+    display: inline-flex;
+    width: 26%;
+    position: relative;
+    left: 69%;
+    bottom: 14%;
+    margin-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  .pop-paragraph {
+    margin-top: 29px;
+    width: 68%;
+    padding: 0 25px;
+  }
+
+  .pop-btn {
+    display: inline-flex;
+    width: 24%;
+    position: relative;
+    bottom: 14%;
+    left: 69%;
+  }
+
+  .pop-btn button {
+    padding: 6px;
+    font-size: 1.1rem;
   }
 
   .card-work {
