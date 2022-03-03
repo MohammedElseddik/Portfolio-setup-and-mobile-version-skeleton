@@ -167,7 +167,6 @@ function createElements(project) {
 workSectionDivs.forEach(createElements);
 
 const btn = [...document.querySelectorAll('.work-section__btn')];
-
 const popDiv = document.createElement('div');
 
 function createPopup(button) {
