@@ -166,11 +166,12 @@ function createElements(project) {
 
 workSectionDivs.forEach(createElements);
 
-const btn = document.querySelectorAll('.work-section__btn');
+const btn = [...document.querySelectorAll('.work-section__btn')];
+
 const popDiv = document.createElement('div');
 
-function createPopup() {
-  for (let i = 0; i < projectObjects.length; i += 1) {
+function createPopup(button) {
+  for (let i = 0; i <= btn.indexOf(button); i += 1) {
     popDiv.setAttribute('class', 'popup');
     popDiv.innerHTML = `<div class="popup-container"><div class="popup__div1">
     <div class="popup-exit">
@@ -178,9 +179,7 @@ function createPopup() {
     </div>
     <div class="popup-title">
     <h2 data-title="title">${projectObjects[i].title}</h2>
-    <div class="frame2" data-frame="frame-list">${
-  projectObjects[i].dataFrame
-}</div>
+    <div class="frame2" data-frame="frame-list">${projectObjects[i].dataFrame}</div>
           </div>
           </div>
           <div class="popup-img__div2">
@@ -219,6 +218,7 @@ function createPopup() {
   fragment.appendChild(popDiv);
   workSection.appendChild(fragment);
   const exitbtn = document.querySelector('.exit-btn');
+
   ['click', 'keypress'].forEach((event) => {
     exitbtn.addEventListener(event, () => {
       filterDiv.classList.remove('active');
@@ -231,7 +231,7 @@ function createPopup() {
 btn.forEach((button) => {
   button.addEventListener('click', () => {
     filterDiv.classList.toggle('active');
-    createPopup();
+    createPopup(button);
     document.body.classList.add('no-scroll');
   });
 });
