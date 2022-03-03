@@ -44,17 +44,6 @@ body {
   display: none;
 }
 
-.popup-div3__programing li {
-  padding: 8px 12px;
-  list-style: none;
-  font-size: 1.2rem;
-  font-style: normal;
-  color: #6070ff;
-  line-height: 16px;
-  border-radius: 8px;
-  background-color: #ebebff;
-}
-
 .main-bar__items-visible {
   align-items: flex-start;
   display: block;
@@ -280,8 +269,12 @@ a {
   width: 87%;
   z-index: 10;
   padding: 24px;
-  height: 92%;
-  overflow: scroll;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
 }
 
 .pop-header {
@@ -310,29 +303,21 @@ a {
   line-height: 24px;
 }
 
-.popup-div3__programing ul {
+ul[data-language="language-list"] {
   border-bottom: 1px solid #ebecf0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  width: 100%;
-  margin: 15px 0;
-  padding: 14px 0;
+  padding-bottom: 20px;
 }
 
 img[data-img="card-image"] {
   width: 100%;
 }
 
-.exit-btn__div {
+.pop-btn {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  min-width: 300.4px;
 }
 
-.exit-btn__div button {
+.pop-btn button {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -349,9 +334,20 @@ img[data-img="card-image"] {
   transition: all 0.5s ease-in;
 }
 
-.exit-btn__div button:hover {
-  background-color: #4255ff;
-  color: #fff;
+.about-section button {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 3px solid #6070ff;
+  color: #3d51ff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 24px;
+  padding: 12px;
+  width: 60%;
+  max-width: 247.4px;
+  min-width: 160px;
+  transition: all 0.5s ease-in;
 }
 
 .pop-btn button:hover {
@@ -842,88 +838,58 @@ img:hover {
     height: 92%;
     z-index: 10;
     padding: 18px;
-    gap: 1.3em;
-    overflow: hidden;
   }
 
-  .popup-exit {
-    display: flex;
-    justify-content: flex-end;
+  .popup-container {
+    gap: 0.7em;
   }
 
-  .popup-img__div2 {
-    width: 100%;
-    height: 31%;
+  .pop-header {
+    display: inline-block;
+    position: relative;
+    left: 95%;
   }
 
-  .popup-img__div2 img {
-    width: 100%;
-    height: 100%;
+  h2[data-title="title"] {
+    font-size: 2.2rem;
+    display: inline;
+    width: fit-content;
+  }
+
+  .popup img[data-img="card-image"] {
+    width: 95%;
+    height: 40%;
+    margin: 0 auto;
     object-fit: cover;
-    object-position: 5% 20%;
   }
 
-  .popup__div3 {
-    width: 100%;
-    display: flex;
-    margin: 30px 0;
-    gap: 3em;
+  .popup ul[data-language="language-list"] {
+    display: inline-flex;
+    width: 26%;
+    position: relative;
+    left: 69%;
+    bottom: 14%;
+    margin-top: 16px;
+    padding-bottom: 15px;
   }
 
-  .popup__div3 .discription {
-    width: 70%;
+  .pop-paragraph {
+    margin-top: 29px;
+    width: 68%;
+    padding: 0 25px;
   }
 
-  .popup-div3__programing {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+  .pop-btn {
+    display: inline-flex;
+    width: 24%;
+    position: relative;
+    bottom: 14%;
+    left: 69%;
   }
 
-  .popup-div3__programing ul {
-    flex-wrap: wrap;
-  }
-
-  .exit-btn__div {
-    display: flex;
-    gap: 1em;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  .exit-btn__div button {
-    padding: 12px;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 1px;
-    color: #3d51ff;
-    border: 3px solid #6070ff;
-    border-radius: 8px;
-    background-color: #fff;
-    gap: 0.3em;
-    transition: all 0.5s ease-in;
-  }
-
-  .about-section button {
-    background-color: #fff;
-    border-radius: 8px;
-    border: 3px solid #6070ff;
-    color: #3d51ff;
-    font-size: 1.7rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 24px;
-    padding: 12px;
-    width: 60%;
-    max-width: 247.4px;
-    min-width: 160px;
-    transition: all 0.5s ease-in;
-  }
-
-  .exit-btn__div button:hover {
-    background-color: #4255ff;
-    color: #fff;
+  .pop-btn button {
+    padding: 6px;
+    font-size: 1.1rem;
   }
 
   .card-work {
