@@ -747,6 +747,17 @@ img:hover {
   transform: scale(1.05);
 }
 
+.error-message.show {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+.error-message .hidden {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .nav-bar {
     padding: 30px 142px 0 142px;

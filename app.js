@@ -178,7 +178,9 @@ function createPopup(button) {
     </div>
     <div class="popup-title">
     <h2 data-title="title">${projectObjects[i].title}</h2>
-    <div class="frame2" data-frame="frame-list">${projectObjects[i].dataFrame}</div>
+    <div class="frame2" data-frame="frame-list">${
+  projectObjects[i].dataFrame
+}</div>
           </div>
           </div>
           <div class="popup-img__div2">
@@ -233,4 +235,17 @@ btn.forEach((button) => {
     createPopup(button);
     document.body.classList.add('no-scroll');
   });
+});
+
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+
+const regex = /[A-Z]/;
+
+form.addEventListener('submit', (e) => {
+  if (regex.test(email.value.trim())) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('.error-message');
+    errorMessage.classList.remove('hidden');
+  }
 });
