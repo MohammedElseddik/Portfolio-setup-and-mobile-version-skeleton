@@ -239,13 +239,15 @@ btn.forEach((button) => {
 
 const form = document.querySelector(".contact-form");
 const email = document.getElementById("email");
+const formButton = document.querySelector('.contact-form__btn');
 
 const regex = /[A-Z]/;
 
 form.addEventListener("submit", (e) => {
   if (regex.test(email.value.trim())) {
     e.preventDefault();
-    const errorMessage = document.querySelector("small");
+    const errorMessage = document.querySelector(".error-message");
+    console.log(errorMessage);
     errorMessage.classList.remove("hidden");
   }
 });
